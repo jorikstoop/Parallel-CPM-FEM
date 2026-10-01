@@ -8,7 +8,7 @@
 typedef int BOOL;
 #define SEED 3
 
-#define NVX 100        // domain size (number of voxels)
+#define NVX 300        // domain size (number of voxels)
 #define NVY NVX
 #define NV  (NVX*NVY)
 #define NNX (NVX+1)     // number of nodes
@@ -16,13 +16,13 @@ typedef int BOOL;
 #define NN  (NNX*NNY)
 #define NDOF (2*NN)      // number of degrees of freedom
 #define VOXSIZE .0000025 // [m]
-#define NRINC 100      // 100 for profiling, 3000 for defualt sim
+#define NRINC 3000      // 100 for profiling, 3000 for defualt sim
 
 #define MAXNRITER 1000
 #define ACCURACY .00001
 
 // material properties
-#define YOUNGS 32000 // [Pa]
+#define YOUNGS 10E3 // [Pa]
 #define POISSON .45//
 
 // loading
