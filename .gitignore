@@ -1,0 +1,7 @@
+cpmfem
+*.o
+*.out
+*.csv
+*.mp4
+*.png
+.venv
