@@ -68,9 +68,9 @@ int init_cells(VOX* pv, int *NRC_loc, int **loc_cells)
 			//r01 = rand()/(double)RAND_MAX;
 			r01 = (hash_vox(vx, gy, SEED) & 0xFFFFFF) / (double)0x1000000; // task invariant rng based on global position, useful for MPI
 		
-			//if (r01 < .25 / TARGETVOLUME) // place cells with 25% of max density
+			if (r01 < .25 / TARGETVOLUME) // place cells with 25% of max density
 			// alternate placement methods:
-			if((vx==NVX/2)&&(gy==NVY/2)) // to place cell at exact global center
+			//if((vx==NVX/2)&&(gy==NVY/2)) // to place cell at exact global center
 			//if(((vx==NVX/2-7)||(vx==NVX/2+7))&&(gy==NVY/2)) // seed two cells at offset from global center
 			//dx=vx-NVX/2; dy=gy-NVY/2; d=sqrt(dx*dx+dy*dy); if((d<NVX/8.0) && (r01<1.5/TARGETVOLUME)) // seed inside circular region
 			{
