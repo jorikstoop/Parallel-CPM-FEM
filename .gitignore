@@ -3,5 +3,5 @@ cpmfem
 *.out
 *.csv
 *.mp4
-*.png
 .venv
+.DS_Store
