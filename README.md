@@ -4,6 +4,8 @@ Hybrid OpenMP-MPI parallel cellular Potts and finite element code for simulating
 
 Authors: Jorik Stoop, Guinevere Ferreira
 
+![overview](./readme_imgs/overview.png)
+
 ### Attribution
 This repository extends the simulation code from:
 
@@ -105,6 +107,9 @@ NOTE: there are additional command-line arguments for the `make_movie.py` code l
 - "--fps", default=25, Frames per second
 - "--nex", default=None, NEX
 - "--ney", default=None, NEY (optional)
+
+![movie](./readme_imgs/simmovie.gif)
+
 
 ## Run Stiffness Study
 
